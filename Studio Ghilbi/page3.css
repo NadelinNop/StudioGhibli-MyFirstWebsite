@@ -1,0 +1,61 @@
+body {
+    background-color: #382f3c;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    overflow: hidden;
+    
+    background-image:
+      radial-gradient(rgba(255, 241, 102, .2) 2px, transparent 10px),
+      radial-gradient(rgba(255, 241, 102, .1) 1px, transparent 5px),
+      radial-gradient(rgba(255, 241, 102, .1) 2px, transparent 10px),
+      radial-gradient(rgba(255, 241, 102, .2), rgba(255, 241, 102, .2) 2px, transparent 5px),
+      radial-gradient(rgba(255, 241, 102, .01) 2px, transparent 10px),
+      radial-gradient(rgba(255, 241, 102, .2), rgba(255, 241, 102, .2) 2px, transparent 5px);
+    background-size: 750px 750px, 550px 550px, 450px 450px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 110px 200px;
+  }
+  
+  header {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    padding: 5px;
+    color: #020202;
+  }
+  
+  img {
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          filter: FlipH;
+          -ms-filter: "FlipH";
+  }
+  
+  #info {
+    color: white;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: #726890;
+  }
+  
+  button, button:focus {
+    background-color: transparent;
+    border: none;
+    color: #acadb6;
+    padding: 0px 20px 0px 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  button:hover {
+    color: 	#726890;
+    transition: color 0.5s ease;
+  }
+  
+  button:active, button:visited {
+    color: 	#222222;
+    border: none;
+  }

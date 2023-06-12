@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap');
+body,html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    line-height:1.8em;
+    color:black
+}
+
+.pimg1{
+    background-image:url("img1.jpg");
+    min-height:100%;
+}
+.pimg2{
+    background-image:url("img2.jpg");
+    min-height:600px;
+}
+.pimg1, .pimg2{
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:white;
+    background-attachment: fixed;
+}
+
+.midtext{
+    text-align:center;
+    padding:50px 80px;
+    font-size:20px;
+}
+.heading1{
+  
+   position:relative;
+   left:50%;
+}
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size:27px;
+    font-family: 'Yantramanav', sans-serif;
+}
+.body1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #e4e4e4;
+}
+.flex-container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top:100px;
+
+}
+.flexbox-item{
+    margin:20px;
+   
+    width:300px;
+    height:200px;
+    
+}
+.flexbox-item-1{
+    background-image:url("item1.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-2{
+    background-image:url("item2.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-3{
+    background-image:url("item3.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-4{
+    background-image:url("items4.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-5{
+    background-image:url("item5.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-6{
+    background-image:url("item6.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-7{
+    background-image:url("item7.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-8{
+    background-image:url("item8.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-9{
+    background-image:url("item9.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-10{
+    background-image:url("item10.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-11{
+    background-image:url("item11.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-12{
+    background-image:url("item12.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-13{
+    background-image:url("item13.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-14{
+    background-image:url("item14.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-15{
+    background-image:url("item15.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-16{
+    background-image:url("item16.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-17{
+    background-image:url("item17.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-18{
+    background-image:url("item18.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-19{
+    background-image:url("item19.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-20{
+    background-image:url("item20.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-21{
+    background-image:url("item21.jpg");
+    background-size:cover;
+
+}
+.flexbox-item-22{
+    background-image:url("item22.jpg");
+    background-size:cover;
+
+}
+.navi
+{
+  margin: 0;
+  padding: 0;
+  
+  
+  
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+
+
+
+
+
+
+
